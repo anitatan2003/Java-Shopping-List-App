@@ -39,14 +39,16 @@ public class ShoppingList {
    * @return Returns the total cost of all the items in the Shopping List
    */
    public double getTotalCost () {
-      double TotalCost = items[0].getCost();
-      
-      if (size > 0) {
-         for (int i = 1; i < size; i++) {
-            TotalCost += items[size].getCost();
-            size++;
-         }
+      if (size == 0){
+         return 0;
       }
+
+      double TotalCost = items[0].getCost();
+
+      for (int i = 1; i < size; i++) {
+         TotalCost += items[i].getCost();
+      }
+
       return TotalCost;
    }
    
