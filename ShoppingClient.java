@@ -12,7 +12,7 @@ public class ShoppingClient {
          if (input.hasNextInt()) {
             option (input.nextInt(), list); //call options method
             intCheck = true;
-         } 
+         }
          
          intCheck = false;
       }   
@@ -47,7 +47,7 @@ public class ShoppingClient {
                intCheck = true;
          
             } else {
-               System.out.print ("\nPlease input a numerical value. Enter item quantity: ");
+               System.out.println ("\nPlease input a numerical value. Enter item quantity: ");
                input.next();
             }
          }
@@ -82,7 +82,7 @@ public class ShoppingClient {
          ShoppingItem result = list.searchByName(input.next());
          
          if (result == null) {
-            System.out.print ("Item not found");
+            System.out.println ("Item not found");
             
          } else {
             System.out.print ("Enter new quantity: ");
@@ -90,7 +90,7 @@ public class ShoppingClient {
             while (!intCheck) {
                if (input.hasNextInt()) {
                   result.setQuantity(input.nextInt());
-                  System.out.print ("Quantity for item has been successfully updated!");
+                  System.out.println ("Quantity for item has been successfully updated!");
                   intCheck = true;
                   
                } else {
@@ -108,6 +108,6 @@ public class ShoppingClient {
       //option 5
       } else if (option == 5) {
          System.out.println ("Have a nice day!"); 
-      } 
+      }
    }
 }
