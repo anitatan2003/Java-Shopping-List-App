@@ -1,6 +1,7 @@
 # Java-Shopping-List-App
 
-This is a console-based Java application designed to manage a typical grocery (shopping) list. It has the following functionality:
+Uses Object Oriented Programming (OOP) to create a Java algorithm that efficiently adds, removes, and edits a list of shopping items. Algorithm also calculates the total price of the shopping list. Each shopping list item is an object that contains the fields to store information for item name, price, and quantity.  It has the following functionality:
+
 - Option 1: Display menu
 - Option 2: Add a shopping item
 - Option 3: Change the quantity of an item in your shopping list
